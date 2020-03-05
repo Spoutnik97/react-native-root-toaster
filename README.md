@@ -8,10 +8,16 @@ A toaster on the top of your React Native App
 npm install react-native-root-toaster
 ```
 
+or
+
+```sh
+yarn add react-native-root-toaster
+```
+
 ## Usage
 
 ```js
-import RootToaster from "react-native-root-toaster";
+import RootToaster from 'react-native-root-toaster';
 
 // ...
 

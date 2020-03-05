@@ -21,7 +21,18 @@
     "example": "yarn --cwd example",
     "bootstrap": "yarn example && yarn && cd example/ios && pod install"
   },
-  "keywords": ["react-native", "ios", "android"],
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "toaster",
+    "root",
+    "alert",
+    "message",
+    "toast",
+    "information",
+    "modal"
+  ],
   "repository": "https://github.com/Spoutnik97/react-native-root-toaster",
   "author": "spoutnik97 <guillaume.piedigrossi@gadz.org> (https://github.com/Spoutnik97)",
   "license": "MIT",
@@ -43,8 +54,8 @@
     "husky": "^4.0.1",
     "jest": "^25.1.0",
     "prettier": "^1.19.1",
-    "react": "~16.9.0",
-    "react-native": "~0.61.5",
+    "react": "^16.13.0",
+    "react-native": "^0.61.5",
     "typescript": "^3.7.5"
   },
   "peerDependencies": {
@@ -53,16 +64,20 @@
   },
   "jest": {
     "preset": "react-native",
-    "modulePathIgnorePatterns": ["<rootDir>/lib/"]
+    "modulePathIgnorePatterns": [
+      "<rootDir>/lib/"
+    ]
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "yarn lint && yarn typescript"
     }
   },
   "eslintConfig": {
-    "extends": ["@react-native-community", "prettier"],
+    "extends": [
+      "@react-native-community",
+      "prettier"
+    ],
     "rules": {
       "prettier/prettier": [
         "error",
@@ -75,7 +90,10 @@
       ]
     }
   },
-  "eslintIgnore": ["node_modules/", "lib/"],
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
   "prettier": {
     "singleQuote": true,
     "tabWidth": 2,
@@ -85,6 +103,10 @@
   "@react-native-community/bob": {
     "source": "src",
     "output": "lib",
-    "targets": ["commonjs", "module", "typescript"]
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
   }
 }
