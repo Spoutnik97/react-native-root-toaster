@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast renders correctly 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "black",
+        "bottom": 0,
+        "left": 0,
+        "opacity": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      },
+      Object {
+        "backgroundColor": "transparent",
+        "opacity": 1,
+        "zIndex": 2,
+      },
+    ]
+  }
+>
+  <View
+    hideModalContentWhileAnimating={false}
+    onModalHide={[Function]}
+    onModalWillHide={[Function]}
+    onModalWillShow={[Function]}
+    pointerEvents="box-none"
+    scrollHorizontal={false}
+    scrollOffset={0}
+    scrollOffsetMax={0}
+    scrollTo={null}
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "flex-start",
+        "margin": 0,
+        "transform": Array [
+          Object {
+            "translateY": -1334,
+          },
+        ],
+      }
+    }
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
+    swipeThreshold={100}
+  >
+    <RCTSafeAreaView
+      emulateUnlessSupported={true}
+      style={
+        Object {
+          "backgroundColor": "#2e3137",
+          "margin": 0,
+          "padding": 0,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#2e3137",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingTop": 28,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#FFFFFF",
+              "flex": 1,
+              "fontFamily": "GraphikLCG-Regular",
+              "fontSize": 14,
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            }
+          }
+        >
+          
+        </Text>
+        <RNGestureHandlerButton
+          collapsable={false}
+          onGestureEvent={[Function]}
+          onGestureHandlerEvent={[Function]}
+          onGestureHandlerStateChange={[Function]}
+          onHandlerStateChange={[Function]}
+          rippleColor={0}
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              undefined,
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            style={
+              Object {
+                "alignItems": "center",
+                "justifyContent": "center",
+                "opacity": 1,
+                "paddingHorizontal": 16,
+              }
+            }
+          >
+            <Text
+              allowFontScaling={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontSize": 13,
+                  },
+                  undefined,
+                  Object {
+                    "fontFamily": "icomoon",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </RNGestureHandlerButton>
+      </View>
+    </RCTSafeAreaView>
+  </View>
+</View>
+`;

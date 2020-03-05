@@ -56,6 +56,7 @@
     "prettier": "^1.19.1",
     "react": "^16.13.0",
     "react-native": "^0.61.5",
+    "react-native-testing-library": "^1.12.0",
     "typescript": "^3.7.5"
   },
   "peerDependencies": {
@@ -108,5 +109,8 @@
       "module",
       "typescript"
     ]
+  },
+  "dependencies": {
+    "react-native-modal": "^11.5.4"
   }
 }
