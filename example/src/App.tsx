@@ -1,17 +1,13 @@
 import * as React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import RootToaster from 'react-native-root-toaster';
+import { StyleSheet, View, Text, Button } from 'react-native';
+import { RootToaster, Toast } from 'react-native-root-toaster';
 
 export default function App() {
-  const [deviceName, setDeviceName] = React.useState('');
-
-  React.useEffect(() => {
-    RootToaster.getDeviceName().then(setDeviceName);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Device name: {deviceName}</Text>
+      <Text>Click on the following button to display a Toast</Text>
+      <RootToaster text={'Default text'} />
+      <Button title="Press Me" onPress={() => Toast.show('Hello world!')} />
     </View>
   );
 }
