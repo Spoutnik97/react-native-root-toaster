@@ -6,7 +6,7 @@ jest.useFakeTimers();
 describe('RootToaster', () => {
   it('renders correctly', () => {
     const component = render(
-      <RootToaster visible duration={3000} text="Error" />
+      <RootToaster visible defaultDuration={3000} defaultMessage="Error" />
     );
     expect(component).toMatchSnapshot();
   });

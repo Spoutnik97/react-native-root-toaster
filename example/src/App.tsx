@@ -6,7 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Click on the following button to display a Toast</Text>
-      <RootToaster text={'Default text'} />
+      <RootToaster defaultMessage={'Default message'} />
       <Button title="Press Me" onPress={() => Toast.show('Hello world!')} />
     </View>
   );

@@ -22,9 +22,9 @@ interface Styles {
 
 interface Props {
   visible?: boolean;
-  duration?: number;
-  text: string;
-  color?: string;
+  defaultDuration?: number;
+  defaultMessage?: string;
+  defaultColor?: string;
   CloseComponent?: FunctionComponent;
 }
 
@@ -35,6 +35,7 @@ interface State {
 }
 
 const MARGIN = 4;
+const BLACK_COAL = '#2e3137';
 const styles = StyleSheet.create<Styles>({
   container: {
     flexDirection: 'row',
@@ -43,12 +44,10 @@ const styles = StyleSheet.create<Styles>({
     paddingLeft: MARGIN * 4,
     paddingTop: MARGIN * 7,
     paddingBottom: MARGIN * 4,
-    backgroundColor: '#2e3137',
   },
   safeContainer: {
     margin: 0,
     padding: 0,
-    backgroundColor: '#2e3137',
   },
   modal: { flex: 1, margin: 0, justifyContent: 'flex-start' },
   text: {
@@ -66,8 +65,8 @@ const ANIMATION_DELAY = 500;
 export class RootToaster extends Component<Props, State> {
   state = {
     isVisible: this.props.visible || false,
-    duration: this.props.duration || DEFAULT_DURATION,
-    text: this.props.text || '',
+    duration: this.props.defaultDuration || DEFAULT_DURATION,
+    text: this.props.defaultMessage || '',
   };
 
   _hideTimeout = 0;
@@ -142,20 +141,28 @@ export class RootToaster extends Component<Props, State> {
         coverScreen={false}
         style={styles.modal}
       >
-        <SafeAreaView style={styles.safeContainer}>
-          <View style={styles.container}>
+        <SafeAreaView
+          style={[
+            styles.safeContainer,
+            { backgroundColor: this.props.defaultColor || BLACK_COAL },
+          ]}
+        >
+          <View
+            style={[
+              styles.container,
+              { backgroundColor: this.props.defaultColor || BLACK_COAL },
+            ]}
+          >
             <Text style={styles.text}>{this.state.text}</Text>
 
-            <TouchableOpacity
-              onPress={() => this._hide()}
-              style={styles.container}
-            >
-              {this.props.CloseComponent ? (
-                this.props.CloseComponent({})
-              ) : (
-                <Text>{'X'}</Text>
-              )}
-            </TouchableOpacity>
+            {this.props.CloseComponent && (
+              <TouchableOpacity
+                onPress={() => this._hide()}
+                style={styles.container}
+              >
+                {this.props.CloseComponent({})}
+              </TouchableOpacity>
+            )}
           </View>
         </SafeAreaView>
       </Modal>
