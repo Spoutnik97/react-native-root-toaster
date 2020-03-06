@@ -1,6 +1,6 @@
 {
   "name": "react-native-root-toaster",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A toaster on the top of your React Native App",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
