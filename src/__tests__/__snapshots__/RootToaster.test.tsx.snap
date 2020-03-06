@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RootToaster renders correctly 1`] = `
+<View
+  pointerEvents="box-none"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "black",
+        "bottom": 0,
+        "left": 0,
+        "opacity": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      },
+      Object {
+        "backgroundColor": "transparent",
+        "opacity": 1,
+        "zIndex": 2,
+      },
+    ]
+  }
+>
+  <View
+    hideModalContentWhileAnimating={false}
+    onModalHide={[Function]}
+    onModalWillHide={[Function]}
+    onModalWillShow={[Function]}
+    pointerEvents="box-none"
+    scrollHorizontal={false}
+    scrollOffset={0}
+    scrollOffsetMax={0}
+    scrollTo={null}
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "flex-start",
+        "margin": 0,
+        "transform": Array [
+          Object {
+            "translateY": -1334,
+          },
+        ],
+      }
+    }
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
+    swipeThreshold={100}
+  >
+    <RCTSafeAreaView
+      emulateUnlessSupported={true}
+      style={
+        Array [
+          Object {
+            "margin": 0,
+            "padding": 0,
+          },
+          Object {
+            "backgroundColor": "#2e3137",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingTop": 28,
+            },
+            Object {
+              "backgroundColor": "#2e3137",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#ffffff",
+              "flex": 1,
+              "fontSize": 14,
+              "letterSpacing": 0,
+              "lineHeight": 20,
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+    </RCTSafeAreaView>
+  </View>
+</View>
+`;

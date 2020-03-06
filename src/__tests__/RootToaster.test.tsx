@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-native-testing-library';
-import { RootToaster } from './RootToaster';
+import { RootToaster } from '../RootToaster';
 
 jest.useFakeTimers();
 describe('RootToaster', () => {
