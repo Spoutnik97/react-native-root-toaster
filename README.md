@@ -2,6 +2,8 @@
 
 A toaster on the top of your React Native App
 
+![React Native Root Toaster demo](./react-native-root-toaster.gif)
+
 ## Installation
 
 ```sh
